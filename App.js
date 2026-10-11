@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { StyleSheet, Text, View, Image, TouchableOpacity, SafeAreaView, StatusBar } from 'react-native';
 
 export default function App() {
-  const [points, setPoints] = useState(42);
+  const [points, setPoints] = useState(0);
 
   return (
     <SafeAreaView style={styles.container}>
@@ -30,9 +30,6 @@ export default function App() {
           <Text style={styles.icon}>✉ </Text>
           <Text style={styles.value}>poopalan.dinushka@gmail.com</Text>
         </View>
-
-        <Text style={styles.label}>Role</Text>
-        <Text style={styles.value}>Software Developer</Text>
 
         <Text style={styles.label}>Points</Text>
         <View style={styles.row}>
