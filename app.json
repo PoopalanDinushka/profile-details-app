@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "profile-details-app",
-    "slug": "profile-details-app",
+    "name": "poopalan-profile-app",
+    "slug": "poopalan-profile-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
