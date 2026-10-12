@@ -6,7 +6,7 @@ export default function App() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar barStyle="light-content" backgroundColor="#111827" />
+      <StatusBar barStyle="light-content" backgroundColor="#000" />
 
       <View style={styles.header}>
         <Text style={styles.headerTitle}>My Profile</Text>
@@ -23,12 +23,12 @@ export default function App() {
 
       <View style={styles.detailsContainer}>
         <Text style={styles.label}>Name</Text>
-        <Text style={styles.value}>Poopalan Dinushka</Text>
+        <Text style={styles.value}>Diluka</Text>
 
         <Text style={styles.label}>Email</Text>
         <View style={styles.row}>
           <Text style={styles.icon}>✉ </Text>
-          <Text style={styles.value}>poopalan.dinushka@gmail.com</Text>
+          <Text style={styles.value}>diluka.w@nsbm.ac.lk</Text>
         </View>
 
         <Text style={styles.label}>Points</Text>
@@ -51,82 +51,75 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f3f4f6',
+    backgroundColor: '#f8f9fa',
   },
   header: {
-    backgroundColor: '#111827',
+    backgroundColor: '#000',
     paddingVertical: 18,
     alignItems: 'center',
     shadowColor: '#000',
-    shadowOpacity: 0.15,
-    shadowRadius: 10,
-    shadowOffset: { width: 0, height: 4 },
-    elevation: 5,
+    shadowOpacity: 0.1,
+    shadowRadius: 8,
+    shadowOffset: { width: 0, height: 2 },
+    elevation: 4,
   },
   headerTitle: {
-    color: '#f9fafb',
-    fontSize: 20,
-    fontWeight: '700',
+    color: '#fff',
+    fontSize: 18,
+    fontWeight: 'bold',
   },
   profileContainer: {
     alignItems: 'center',
-    marginVertical: 26,
+    marginVertical: 25,
   },
   profileImage: {
-    width: 128,
-    height: 128,
-    borderRadius: 64,
-    borderWidth: 3,
-    borderColor: '#d1d5db',
+    width: 120,
+    height: 120,
+    borderRadius: 60,
   },
   divider: {
     height: 1,
-    backgroundColor: '#d1d5db',
-    marginHorizontal: 24,
+    backgroundColor: '#dcdde1',
+    marginHorizontal: 20,
     marginBottom: 20,
   },
   detailsContainer: {
-    paddingHorizontal: 28,
+    paddingHorizontal: 25,
   },
   label: {
-    fontSize: 15,
-    fontWeight: '700',
-    color: '#111827',
-    marginTop: 16,
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#000',
+    marginTop: 15,
   },
   value: {
-    fontSize: 16,
-    color: '#374151',
-    marginTop: 6,
+    fontSize: 15,
+    color: '#4b6584',
+    marginTop: 4,
   },
   row: {
     flexDirection: 'row',
     alignItems: 'center',
   },
   icon: {
-    fontSize: 16,
-    color: '#f59e0b',
-    marginTop: 6,
+    fontSize: 14,
+    marginTop: 4,
   },
   fab: {
     position: 'absolute',
-    bottom: 28,
-    right: 24,
-    backgroundColor: '#111827',
-    width: 58,
-    height: 58,
-    borderRadius: 29,
+    bottom: 30,
+    right: 25,
+    backgroundColor: '#000',
+    width: 56,
+    height: 56,
+    borderRadius: 28,
     justifyContent: 'center',
     alignItems: 'center',
-    elevation: 6,
-    shadowColor: '#000',
-    shadowOpacity: 0.22,
-    shadowRadius: 8,
-    shadowOffset: { width: 0, height: 4 },
+    elevation: 5,
   },
   fabIcon: {
     color: '#fff',
-    fontSize: 30,
+    fontSize: 28,
     lineHeight: 30,
   },
 });
